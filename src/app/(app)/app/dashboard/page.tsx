@@ -15,7 +15,7 @@ export default async function Page() {
     throw new Error("Could not fetch pets");
   }
   const data = await response.json();
-  console.log(data);
+
   return (
     <main>
       <div className="flex items-center justify-between text-white py-8">
