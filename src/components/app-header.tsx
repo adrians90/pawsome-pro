@@ -21,7 +21,12 @@ export default function AppHeader() {
         <ul className="flex gap-2 text-xs">
           {routes.map((route) => (
             <li key={route.path}>
-              <Link href={route.path}>{route.label}</Link>
+              <Link
+                className="text-white/70 bg-black/10 rounded-sm px-2 py-1 hover:text-white focus:text-white transition"
+                href={route.path}
+              >
+                {route.label}
+              </Link>
             </li>
           ))}
         </ul>
