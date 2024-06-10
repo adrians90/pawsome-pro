@@ -21,6 +21,7 @@ export default function Home() {
           Use Pawsome Pro to easily keep track of pets under your care. Get
           lifetime access for £299.
         </p>
+        <div className="mt-10"></div>
       </div>
     </main>
   );
