@@ -1,3 +1,4 @@
+import Logo from "@/components/logo";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       />
 
       <div>
+        <Logo />
         <h1 className="text-5xl font-semibold my-6 max-w-[500px]">
           Manage your <span className="font-extrabold">pet daycare</span> with
           ease.
