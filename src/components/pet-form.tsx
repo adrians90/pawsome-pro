@@ -1,3 +1,11 @@
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+
 export default function PetForm() {
-  return <form>Form....</form>;
+  return (
+    <form>
+      <Label htmlFor="name">Name</Label>
+      <Input id="name" type="text" />
+    </form>
+  );
 }
