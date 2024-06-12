@@ -8,9 +8,13 @@ import { Textarea } from "./ui/textarea";
 
 type PetFormProps = {
   actionType: "add" | "edit";
+  onFormSubmission: () => void;
 };
 
-export default function PetForm({ actionType }: PetFormProps) {
+export default function PetForm({
+  actionType,
+  onFormSubmission,
+}: PetFormProps) {
   const { handleAddPet } = usePetContext();
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -25,6 +29,7 @@ export default function PetForm({ actionType }: PetFormProps) {
       notes: formData.get("notes") as string,
     };
     handleAddPet(newPet);
+    onFormSubmission();
   };
   return (
     <form onSubmit={handleSubmit} className="flex flex-col">
