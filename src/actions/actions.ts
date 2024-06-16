@@ -1,6 +1,6 @@
 "use server";
 
-import { signIn } from "@/lib/auth";
+import { signIn, signOut } from "@/lib/auth";
 import prisma from "@/lib/db";
 
 import { sleep } from "@/lib/utils";
@@ -14,6 +14,10 @@ export async function logIn(formData: FormData) {
   const authData = Object.fromEntries(formData.entries());
 
   await signIn("credentials", authData);
+}
+
+export async function logOut() {
+  await signOut({ redirectTo: "/" });
 }
 
 // --- PET ACTIONS
