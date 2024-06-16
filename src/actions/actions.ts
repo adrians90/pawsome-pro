@@ -14,9 +14,7 @@ import bcrypt from "bcryptjs";
 //--- USER ACTIONS
 
 export async function logIn(formData: FormData) {
-  const authData = Object.fromEntries(formData.entries());
-
-  await signIn("credentials", authData);
+  await signIn("credentials", formData);
 
   redirect("/app/dashboard");
 }
