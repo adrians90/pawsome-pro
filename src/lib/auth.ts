@@ -3,7 +3,7 @@ import Credentials from "next-auth/providers/credentials";
 
 import bcrypt from "bcryptjs";
 import { getUserByEmail } from "./server-utils";
-import { authSchema, TAuth } from "./validations";
+import { authSchema } from "./validations";
 
 const config = {
   pages: {
@@ -50,7 +50,7 @@ const config = {
         return false;
       }
 
-      if (isLoggedIn && isTryingToAccessApp) {
+      if (isLoggedIn && isTryingToAccessApp && auth?.user.hasAccess) {
         return true;
       }
 
