@@ -3,6 +3,7 @@ import Credentials from "next-auth/providers/credentials";
 
 import bcrypt from "bcryptjs";
 import { getUserByEmail } from "./server-utils";
+import { authSchema, TAuth } from "./validations";
 
 const config = {
   pages: {
@@ -14,7 +15,13 @@ const config = {
       async authorize(credentials) {
         //runs on login
 
-        const { email, password } = credentials;
+        //validation
+        const validatedFormData = authSchema.safeParse(credentials);
+        if (!validatedFormData.success) {
+          return null;
+        }
+        // extract values
+        const { email, password } = validatedFormData.data;
         const user = await getUserByEmail(email);
         if (!user) {
           console.log("No user found");
