@@ -16,6 +16,8 @@ https://pawsome-pro.vercel.app/
 **To run locally:** npm install, npm run dev
 
 **To use the application, either create an account or use the information below:**
+
+
 Email: example@gmail.com
 Password: example
 
