@@ -1,6 +1,5 @@
 import { z } from "zod";
 import { DEFAULT_PET_IMAGE } from "./constants";
-import email from "next-auth/providers/email";
 
 export const petIdSchema = z.string().cuid();
 
