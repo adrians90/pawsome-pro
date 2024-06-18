@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Pawsome Pro - Pet daycare management software**
 
-## Getting Started
+Pawsome Pro is a comprehensive web application designed to help pet owners and caregivers efficiently manage and keep track of pets under their care.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Features:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application is built with a modern, cutting-edge set of technologies to ensure a seamless and user-friendly experience. It uses Next.js for optimized performance, React for a dynamic UI, and TypeScript for enhanced code quality. The Context API efficiently manages state, while Tailwind CSS enables rapid styling and responsiveness.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Prisma handles database interactions, and Shadcn UI provides enhanced UI components. Secure payments are processed with Stripe, and Zod ensures data validation. Next Auth offers reliable authentication, and Vercel Postgres serves as the scalable database.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Live link:**
 
-## Learn More
+https://pawsome-pro.vercel.app/
 
-To learn more about Next.js, take a look at the following resources:
+**To run locally:** npm install, npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**To use the application, either create an account or use the information below:**
+Email: example@gmail.com
+Password: example
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**To test the payment feature:**
 
-## Deploy on Vercel
+**Stripe:**
+Card number: 4242 4242 4242 4242
+Expiration date: 05/30
+CVC: 123
+Full Name: abcd
+Country: any
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://github.com/adrians90/pawsome-pro/assets/128593202/99381326-f0ba-424d-a00a-eda4d69c5648)
+
+![image](https://github.com/adrians90/pawsome-pro/assets/128593202/e3d8ad17-6030-4a77-9e54-b14cb90cfed8)
+
+![image](https://github.com/adrians90/pawsome-pro/assets/128593202/a8050de7-3bb5-401d-8f59-c5d48b9a7bc5)
+
+![image](https://github.com/adrians90/pawsome-pro/assets/128593202/a53d89ee-c51c-4ff6-a54e-5a00b97ce435)
+
+
+
+
+
