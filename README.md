@@ -19,15 +19,21 @@ https://pawsome-pro.vercel.app/
 
 
 Email: example@gmail.com
+
 Password: example
 
 **To test the payment feature:**
 
 **Stripe:**
+
 Card number: 4242 4242 4242 4242
+
 Expiration date: 05/30
+
 CVC: 123
+
 Full Name: abcd
+
 Country: any
 
 
