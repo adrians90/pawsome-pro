@@ -23,7 +23,7 @@ export default function Home() {
           Use Pawsome Pro to easily keep track of pets under your care. Get
           lifetime access for £299.
         </p>
-        <div className="mt-10 space-x-3">
+        <div className="mt-10 space-x-3 mb-3 ml-1 md:ml-0">
           <Button asChild>
             <Link href="/signup">Get Started</Link>
           </Button>
