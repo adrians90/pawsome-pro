@@ -13,7 +13,7 @@ export default function Home() {
         height={472}
       />
 
-      <div>
+      <div className="ml-1">
         <Logo />
         <h1 className="text-5xl font-semibold my-6 max-w-[500px]">
           Manage your <span className="font-extrabold">pet daycare</span> with
@@ -23,7 +23,7 @@ export default function Home() {
           Use Pawsome Pro to easily keep track of pets under your care. Get
           lifetime access for £299.
         </p>
-        <div className="mt-10 space-x-3 mb-3 ml-1 md:ml-0">
+        <div className="mt-10 mb-3 space-x-3 md:ml-0">
           <Button asChild>
             <Link href="/signup">Get Started</Link>
           </Button>
